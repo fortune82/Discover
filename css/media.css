@@ -1,1 +1,32 @@
-@media(max-width:1000px) {}
+@media(max-width:1150px) {
+
+    .gallery {
+        justify-content: space-around;
+    }
+
+    .links,
+    .send {
+        width: 50%;
+        margin-bottom: 60px;
+    }
+
+}
+
+@media(max-width:800px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links,
+    .send {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .send form input,
+    .send textarea {
+        width: 100%;
+    }
+
+}
