@@ -25,6 +25,7 @@ section {
     margin: 0 auto;
 }
 
+/* ---------------------3 section---------------------- */
 .headline h2 {
     font-family: var(--textFamily);
     font-size: 28px;
@@ -32,7 +33,7 @@ section {
     color: #59c45a;
     text-align: center;
     margin: 0;
-    padding-top: 100px;
+    padding-top: 65px;
 }
 
 .headline hr {
@@ -40,6 +41,7 @@ section {
     width: 150px;
     border: 1px soliв grey;
     border-bottom: none;
+    margin-bottom: 40px;
 }
 
 .headline hr::before {
@@ -55,11 +57,59 @@ section {
 
 }
 
+.slide {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--bgColor);
+    padding: 0;
+}
+
+.service,
+.carousel {
+    width: 50%;
+}
+
+.carousel {
+    margin-right: 80px;
+}
+
+.discription {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.discription img {
+    display: flex;
+    margin-bottom: 20px;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.discription p {
+    width: 50%;
+    margin: 0;
+    padding: 0 30px 40px;
+    text-align: justify;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+
+
+/* ---------------------4 section----------------- */
+
+
+
+.toursGallery .headline h2 {
+    padding-top: 100px;
+}
+
 .gallery {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding: 65px 0;
+    padding: 25px 0 65px;
     padding-bottom: 100px;
 }
 
@@ -93,6 +143,9 @@ section {
     cursor: pointer;
     outline: none;
 }
+
+
+/* -------------------5 section----------------------- */
 
 
 .footContact {
@@ -129,6 +182,7 @@ section {
 
 .logo ul {
     margin: 0;
+
 }
 
 .logo ul li {
