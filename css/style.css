@@ -103,6 +103,69 @@ footer {
 
 }
 
+.foot .logo h2 {
+    color: var(--colorButton);
+    border: 2px solid #9595A1;
+    width: 180px;
+    height: 50px;
+    padding: 10px 23px;
+    margin: 40px 0 45px;
+}
+
+.foot .logo h2::after {
+    content: "travel";
+    display: inline;
+    color: var(--colorButton);
+    font-size: 18px;
+    position: relative;
+    top: 18px;
+    right: 90%;
+    background-color: var(--bgColor);
+    padding: 0 15px;
+    font-weight: 400;
+}
+
+.logo ul {
+    margin: 0;
+}
+
+.logo ul li {
+    margin-bottom: 20px;
+    list-style: none;
+}
+
+.logo p {
+    color: #9595A1;
+    margin-bottom: 35px;
+}
+
+.logo ul li a {
+    text-decoration: none;
+    padding-left: 20px;
+    color: #9595A1;
+}
+
+.icon a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+    background-color: #c9c9c9;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 3px;
+    text-decoration: none;
+}
+
+.icon a i {
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+}
+
+
+
 .foot h2 {
     color: #959595;
     padding-top: 70px;
@@ -130,20 +193,21 @@ footer {
 
 .send form input,
 .send textarea {
-    margin-top: 35px;
+    margin-top: 50px;
     border: none;
     border-bottom: 1px solid #c9c9c9;
     background-color: transparent;
 }
 
+
 textarea {
     resize: none;
-    height: 130px;
+    height: 150px;
 }
 
 .btn {
     text-align: center;
-    margin-top: 60px;
+    margin: 60px 0;
     font-weight: bold;
 }
 
