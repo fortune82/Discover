@@ -10,26 +10,57 @@
         margin-bottom: 60px;
     }
 
-}
+    @media(max-width:950px) {
 
-@media(max-width:800px) {
-    .contact {
-        display: flex;
-        flex-wrap: wrap;
+        .service,
+        .carousel {
+            width: 100%;
+        }
+
+        .carousel {
+            height: 400px;
+        }
+
+        .slide {
+            flex-direction: column;
+        }
+
+        .discription {
+            flex-direction: column;
+            width: 100%;
+        }
+
+        .discription p {
+            width: 100%;
+        }
+
+        .carouselSlide img {
+            height: auto;
+        }
     }
 
-    .links,
-    .send {
-        width: 100%;
-        margin-bottom: 60px;
-    }
 
-    .send form input,
-    .send textarea {
-        width: 100%;
-    }
+    @media(max-width:800px) {
+        .contact {
+            display: flex;
+            flex-wrap: wrap;
+        }
 
-    .logo ul {
-        padding-left: 5px;
+        .links,
+        .send {
+            width: 100%;
+            margin-bottom: 60px;
+        }
+
+        .send form input,
+        .send textarea {
+            width: 100%;
+        }
+
+        .logo ul {
+            padding-left: 5px;
+        }
+
+
     }
 }
