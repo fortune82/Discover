@@ -10,57 +10,93 @@
         margin-bottom: 60px;
     }
 
-    @media(max-width:950px) {
-
-        .service,
-        .carousel {
-            width: 100%;
-        }
-
-        .carousel {
-            height: 400px;
-        }
-
-        .slide {
-            flex-direction: column;
-        }
-
-        .discription {
-            flex-direction: column;
-            width: 100%;
-        }
-
-        .discription p {
-            width: 100%;
-        }
-
-        .carouselSlide img {
-            height: auto;
-        }
+    .favorableImg {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
     }
 
+    .favorableImgBlock {
+        width: 100%;
+    }
 
-    @media(max-width:800px) {
-        .contact {
-            display: flex;
-            flex-wrap: wrap;
-        }
+    .favorableImgBlock h3 {
+        margin: 0 10px 0 25px;
+    }
 
-        .links,
-        .send {
-            width: 100%;
-            margin-bottom: 60px;
-        }
-
-        .send form input,
-        .send textarea {
-            width: 100%;
-        }
-
-        .logo ul {
-            padding-left: 5px;
-        }
-
-
+    .favorableImgBlock p {
+        margin: 0 10px 0 25px;
     }
 }
+
+
+@media(max-width:950px) {
+
+    .service,
+    .carousel {
+        width: 100%;
+    }
+
+    .carousel {
+        height: 400px;
+    }
+
+    .slide {
+        flex-direction: column;
+    }
+
+    .discription {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .discription p {
+        width: 100%;
+    }
+
+    .carouselSlide img {
+        height: auto;
+    }
+}
+
+
+@media(max-width:800px) {
+    .contact {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .links,
+    .send {
+        width: 100%;
+        margin-bottom: 60px;
+    }
+
+    .send form input,
+    .send textarea {
+        width: 100%;
+    }
+
+    .logo ul {
+        padding-left: 5px;
+    }
+}
+
+@media(max-width: 600px) {
+
+    .favorableImgBlock {
+        flex-direction: column;
+    }
+
+    .favorableImgBlock img {
+        display: block;
+        margin: 0 0 25px 10px;
+    }
+
+    .favorableImgBlock h3 {
+        margin: 0 0 25px 10px;
+    }
+
+    .favorableImgBlock p {
+        margin: 0 10px 0 10px;
+    }
