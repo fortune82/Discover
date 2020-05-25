@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --bgColor: #efeeee;
     --colorButton: #59c45a;
@@ -74,11 +78,41 @@ nav a {
     padding: 58px 25px;
     font-weight: 700;
     font-size: 18px;
+    color: #000;
 }
 
 nav a:hover {
     color: #fff;
     background-color: var(--colorButton);
+}
+
+.mini-menu {
+    padding: 5px;
+    width: 100%;
+    background-color: var(--colorButton);
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.back {
+    color: var(--colorButton);
+    text-transform: uppercase;
+    font-size: 28px;
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    font-size: 55px;
+    background-color: transparent;
+    color: #fff;
+    top: 0;
+    right: 0;
+    display: none;
+    z-index: 2;
 }
 
 /* -------------1 section--------------------------- */
@@ -101,26 +135,33 @@ h1 {
     text-align: center;
     color: #fff;
     line-height: 30px;
-    width: 1000px;
+    /* width: 1000px; */
     padding: 0;
     margin: 0;
 }
 
 .btn {
+    margin: 60px 0;
+}
+
+.tours,
+.btn {
     position: relative;
     left: 50%;
     transform: translate(-50%, 0);
-    margin: 60px 0;
-    font-weight: bold;
+    width: 230px;
+    height: 70px;
+    border: 1px solid var(--colorButton);
+    border-radius: 5px;
+    background-color: var(--colorButton);
+    color: #fff;
+    font-size: 23px;
+    font-family: var(--textFamile);
+    font-weight: 400;
+    text-transform: uppercase;
     cursor: pointer;
+    outline: none;
 }
-
-.btn a {
-    color: white;
-    text-decoration: none;
-}
-
-
 
 /* --------------2 section----------------------------- */
 .headline h2 {
@@ -136,7 +177,7 @@ h1 {
 .headline hr {
     margin-top: 15px;
     width: 150px;
-    border: 1px soliв grey;
+    border: 1px solid grey;
     border-bottom: none;
     margin-bottom: 70px;
 }
@@ -310,22 +351,6 @@ h1 {
     transform: translate(-50%, 0);
 }
 
-.tours,
-.btn {
-    width: 230px;
-    height: 70px;
-    border: 1px solid var(--colorButton);
-    border-radius: 5px;
-    background-color: var(--colorButton);
-    color: #fff;
-    font-size: 28px;
-    font-family: var(--textFamile);
-    font-weight: 400;
-    text-transform: uppercase;
-    cursor: pointer;
-    outline: none;
-}
-
 
 /* -------------------5 section----------------------- */
 
@@ -346,26 +371,30 @@ h1 {
     color: var(--colorButton)
 }
 
-.foot .logo h2::after {
+.footMenu h2::after {
     background-color: var(--bgColor);
 }
 
-.logo ul {
-    margin: 0;
-
+.footMenu {
+    display: flex;
+    flex-direction: column;
 }
 
-.logo ul li {
+.footMenu ul {
+    margin: 0;
+}
+
+.footMenu ul li {
     margin-bottom: 20px;
     list-style: none;
 }
 
-.logo p {
+.footMenu p {
     color: #9595A1;
     margin-bottom: 35px;
 }
 
-.logo ul li a {
+.footMenu ul li a {
     text-decoration: none;
     padding-left: 20px;
     color: #9595A1;

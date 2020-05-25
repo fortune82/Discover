@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -18,28 +18,28 @@
 </head>
 
 <body>
-
-    <!-- -------------------header-------------- -->
     <header>
         <section>
             <div class="container menu">
                 <div class="logo">
                     <h2><a href=""> discover</a></h2>
                 </div>
-                <nav>
+                <nav class="headerMenu">
+                    <button class="mini-menu">Menu</button>
                     <ul>
-                        <li><a href="">home</a></li>
-                        <li><a href="">tour</a></li>
-                        <li><a href="">hotel</a></li>
-                        <li><a href="">culinary</a></li>
-                        <li><a href="">contact</a></li>
+                        <li><button class="back">&times;</button></li>
+                        <li><a href="#">home</a></li>
+                        <li><a href="#tour">tour</a></li>
+                        <li><a href="#hotel">hotel</a></li>
+                        <li><a href="#culinary">culinary</a></li>
+                        <li><a href="#contact">contact</a></li>
                     </ul>
                 </nav>
             </div>
         </section>
     </header>
 
-    <!-- --------------------1 section------------- -->
+
 
     <section class="head">
         <div class="container">
@@ -47,13 +47,13 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia aspernatur ipsam explicabo vero, iste,
                 reprehenderit repellendus repudiandae dignissimos cumque quasi aliquid odio aliquam! Quibusdam quos,
                 maxime cumque aliquam veniam repellat.</p>
-            <div class="btn"><button class='tours'><a href=""> booking tour </a></button></div>
+            <div class="btn"><button class='tours'>booking tour </button></div>
         </div>
     </section>
 
-    <!-- ------------------2 section-------------------- -->
 
-    <section>
+
+    <section id="hotel">
         <div class="container">
             <div class="headline">
                 <h2>favorable</h2>
@@ -107,9 +107,9 @@
     </section>
 
 
-    <!-- -------------------------3 section-------------- -->
 
-    <section class="slide">
+
+    <section class="slide" id="culinary">
         <div class="carousel">
             <div class="carouselSlide">
                 <img src="https://i.picsum.photos/id/100/1000/600.jpg" alt="">
@@ -146,13 +146,11 @@
                     perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium</p>
             </div>
         </div>
-
     </section>
 
 
-    <!-- ---------------------4 section-------------------- -->
 
-    <section>
+    <section id="tour">
         <div class="container toursGallery">
             <div class="headline">
                 <h2>tours</h2>
@@ -177,15 +175,13 @@
     </section>
 
 
-    <!-- ----------------------5 section------------ -->
 
-
-    <section class="footContact">
+    <section class="footContact" id="contact">
         <div class="container foot">
             <h2>contact</h2>
             <div class="contact">
                 <div class="links">
-                    <div class="logo">
+                    <div class="logo footMenu">
                         <h2><a href=""> discover</a></h2>
                         <p>Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro
                             quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia
@@ -195,7 +191,7 @@
                         <ul>
                             <li><img src="img/ic-map.png" alt=""><a href="">So 188 Nguyen Xien, Thanh Xuan, Ha Noi</a>
                             </li>
-                            <li><img src="img/ic-phone.png" alt=""><a href="tell:+84 985 234 812">+84 985 234 812</a>
+                            <li><img src="img/ic-phone.png" alt=""><a href="tell:+84985234812">+84 985 234 812</a>
                             </li>
                             <li><img src="img/ic-mail.png" alt=""><a
                                     href="mailto:Huuluong.arc@gmail.com">Huuluong.arc@gmail.com</a></li>
@@ -214,10 +210,9 @@
                     <form action="input.php">
                         <input type="text" placeholder="Your name">
                         <input type="email" placeholder="Email">
-                        <textarea name="" id="" placeholder="Comments"></textarea>
+                        <textarea name="area" id="#" placeholder="Comments"></textarea>
 
-                        <div class="btn"><button class='tours'><a href="#">send <i
-                                        class="fas fa-envelope"></i></a></button>
+                        <div class="btn"><button class='tours'>send <i class="fas fa-envelope"></i></button>
                         </div>
 
                     </form>

@@ -1,4 +1,23 @@
 @media(max-width:1150px) {
+    .logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .headerMenu ul {
+        justify-content: center;
+        padding: 0;
+    }
+
+    .headerMenu a {
+        padding: 28px 25px;
+    }
 
     .gallery {
         justify-content: space-around;
@@ -27,6 +46,7 @@
     .favorableImgBlock p {
         margin: 0 10px 0 25px;
     }
+
 }
 
 
@@ -57,13 +77,61 @@
     .carouselSlide img {
         height: auto;
     }
+
+    .footMenu ul {
+        padding: 0 0 0 10px;
+    }
 }
 
 
 @media(max-width:800px) {
+    .logo ul {
+        padding-left: 5px;
+    }
+
+    .head {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mini-menu {
+        display: block;
+    }
+
+    .headerMenu ul {
+        position: fixed;
+        flex-direction: column;
+        justify-content: center;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: var(--colorButton);
+        transform: translateX(-100%);
+        transition: .5s;
+    }
+
+    .headerMenu ul.active {
+        transform: translateX(0);
+    }
+
+    .headerMenu a {
+        padding: 30px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    .headerMenu a:hover {
+        background-color: rgb(19, 150, 41);
+    }
+
+    .back {
+        display: block;
+    }
+
     .contact {
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .links,
@@ -75,10 +143,6 @@
     .send form input,
     .send textarea {
         width: 100%;
-    }
-
-    .logo ul {
-        padding-left: 5px;
     }
 }
 
@@ -100,3 +164,4 @@
     .favorableImgBlock p {
         margin: 0 10px 0 10px;
     }
+}
