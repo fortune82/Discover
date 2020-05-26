@@ -340,7 +340,14 @@ h1 {
     width: 270px;
     height: 215px;
     margin-bottom: 30px;
+    opacity: 1;
+    /*отложенная агрузка для ускарения загрузки*/
+    transition: opacity 0.3s;
+    /*отложенная агрузка для ускарения загрузки*/
+}
 
+.gallery img[data-src] {
+    opacity: 0;
 }
 
 .toursGallery .btn {

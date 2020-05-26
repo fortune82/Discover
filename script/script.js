@@ -19,3 +19,11 @@ $('nav a').click(function () {
 $('.back').click(function () {
     $('nav ul').removeClass('active');
 })
+
+// скрипт для отложеной загрузки картинок для ускарения загрузки
+Array.prototype.forEach.call(document.querySelectorAll('img[data-src]'), function (img) {
+    img.setAttribute('src', img.getAttribute('data-src'));
+    img.onload = function () {
+        img.removeAttribute('data-src');
+    };
+});
